@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Azerbaycan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1b2a;
+    color: #e0e1dd;
+}
+
+header {
+    background-color: #1b263b;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6b6b;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+}
+
+.hero p {
+    font-size: 1.2em;
+    z-index: 1;
+    position: relative;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    z-index: 1;
+    position: relative;
+}
+
+.hero .btn:hover {
+    background-color: #ff4757;
+}
+
+.games {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.games h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.game-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.game {
+    background-color: #1b263b;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.game:hover {
+    transform: translateY(-10px);
+}
+
+.game img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.game h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #1b263b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+    </style>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Steam Azerbaycan">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Ana Sehife</a></li>
+                <li><a href="#">Oyunlar</a></li>
+                <li><a href="#">Haqqimizda</a></li>
+                <li><a href="#">Elaqe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Steam Azerbaycana Xos Geldiniz</h1>
+            <p>En yaxsi oyunlari kesf etmek ucun burdayiz</p>
+            <a href="#" class="btn">Indi Kesf et</a>
+        </section>
+        <section class="games">
+            <h2>Mehsur Oyunlar</h2>
+            <div class="game-list">
+                <div class="game">
+                    <img src="game1.jpg" alt="Oyun 1">
+                    <h3>Oyun 1</h3>
+                    <p>Oyun haqqinda...</p>
+                </div>
+                <div class="game">
+                    <img src="game2.jpg" alt="Oyun 2">
+                    <h3>Oyun 2</h3>
+                    <p>Oyun  haqqinda...</p>
+                </div>
+                <div class="game">
+                    <img src="game3.jpg" alt="Oyun 3">
+                    <h3>Oyun 3</h3>
+                    <p>Oyun haqqinda...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Steam Azerbaycan. Butun Haqqlar Mexfidir.</p>
+    </footer>
+</body>
+</html>
